@@ -11,10 +11,12 @@ The goal of this WordPress theme is to create an easy-to-use, friendly and light
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Configuration](#configuration)
-4. [Run webpack](#run-webpack)
+1. [Introduction](#1-introduction)
+2. [Installation](#2-installation)
+3. [Configuration](#3-configuration)
+4. [Run webpack](#4-run-webpack)
+4. [Contributing](#5-contributing)
+5. [Credits](#6-credits)
 
 ## 1. Introduction
 
@@ -97,3 +99,12 @@ This command will start your BrowserSync server, watch for changes in your file 
 ```npm run build```
 
 This command will build once minified CSS and JS files with sourcemaps to upload your website in production.
+
+## 5. Contributing
+
+This WordPress theme is open source, feel free to pull request any modification or improvement. You can change the webpack configuration to match your need as the current configuration is a basic one.
+
+## 6. Credits
+
+2021 © [LSPN.FR](https://lspn.fr)
+
