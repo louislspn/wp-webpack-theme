@@ -1,3 +1,3 @@
 import '../sass/app.scss'
 
-console.info('Hello  !')
+console.info('[wp-webpack-theme is live]')

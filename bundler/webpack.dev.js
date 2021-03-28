@@ -17,6 +17,7 @@ module.exports = {
     }),
     new BrowserSyncPlugin({
       files: "*",
+      injectChanges: false,
       proxy: config.datas.localPath,
     })
   ],
