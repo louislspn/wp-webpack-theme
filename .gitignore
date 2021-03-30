@@ -1,6 +1,9 @@
 # ignore node dependency directories
 node_modules/
 
+# ignore config file
+bundler/config.js
+
 # ignore log files and databases
 *.log
 *.sql
