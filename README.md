@@ -67,7 +67,7 @@ npm install
 
 To make the webpack configuration works with your environment you will have to tell your WordPress theme the path of your local web server. So first of all, **launch your usual web local server on your computer** such as WAMP or MAMP.
 
-In the ```bundler/config.js``` file, write the path where you usually access to your WordPress website with your local server. For example :
+Create the configuration file here ```bundler/config.js```, write the code below with the path you usually access to your WordPress website with your local server. For example :
 
 ```js
 exports.datas = {
