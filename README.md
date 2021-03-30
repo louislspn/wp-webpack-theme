@@ -96,7 +96,7 @@ This command will start your BrowserSync server, watch for changes in your file 
 
 |        options         |       |
 | :-----------------: | :---------: |
-|  --sourcemaps  | generates sourcemaps with your compiled files, involves slower build times and reloads  |
+|  ```--sourcemaps```  | generates sourcemaps with your compiled files, involves slower build times and reloads  |
 
 
 ## Production
