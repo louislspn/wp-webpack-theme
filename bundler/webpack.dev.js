@@ -3,6 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const config = require('./config.js')
+const webpack = require('webpack')
 
 module.exports = {
   entry: path.resolve(__dirname, '../assets/src/js/app.js'),
@@ -11,7 +12,9 @@ module.exports = {
     filename: 'bundle.min.js'
   },
   plugins: [
-    new UglifyJSPlugin(),
+    new UglifyJSPlugin({
+      sourceMap: true
+    }),
     new MiniCSSExtractPlugin({
       filename: "../css/style.min.css"
     }),
@@ -19,6 +22,10 @@ module.exports = {
       files: "*",
       injectChanges: false,
       proxy: config.datas.localPath,
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ],
   externals: {
@@ -51,4 +58,5 @@ module.exports = {
   },
 
   mode: "development",
+  devtool: 'source-map',
 };
