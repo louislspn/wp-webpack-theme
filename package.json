@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --config ./bundler/webpack.dev.js",
+    "watch": "webpack --watch --env sourcemaps=$npm_config_sourcemaps --config ./bundler/webpack.dev.js",
     "build": "webpack --config ./bundler/webpack.prod.js"
   },
   "repository": {

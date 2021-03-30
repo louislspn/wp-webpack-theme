@@ -85,14 +85,19 @@ Once you have installed and configured the ```wp-webpack-theme```, you should be
 
 |        environment         |   configuration    | command |
 | :-----------------: | :---------: | :----------: |
-|  development  | ```bundler/webpack.dev.js```  | ```npm run dev```  |
-|  production | ```bundler/webpack.prod.js``` | ```npm run build```
+|  development  | ```bundler/webpack.common.js```  | ```npm run watch```  |
+|  production | ```bundler/webpack.prod.js``` | ```npm run build```|
 
 ### Development
 
-```npm run dev```
+```npm run watch```
 
-This command will start your BrowserSync server, watch for changes in your file and compile your assets.
+This command will start your BrowserSync server, watch for changes in your file and compile your assets without sourcemaps for perfomances purpose.
+
+|        options         |       |
+| :-----------------: | :---------: |
+|  --sourcemaps  | generates sourcemaps with your compiled files, involves slower build times and reloads  |
+
 
 ## Production
 

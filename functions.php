@@ -1,6 +1,6 @@
 <?php 
 
-function theme_buidler() {
+function theme_builder() {
     
   wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
   wp_enqueue_style('css', get_template_directory_uri() . '/assets/css/style.min.css', 1.0);
@@ -8,7 +8,7 @@ function theme_buidler() {
 
 }
 
-add_action('wp_enqueue_scripts', 'theme_buidler');
+add_action('wp_enqueue_scripts', 'theme_builder');
 add_theme_support( 'post-thumbnails' );
 
 
